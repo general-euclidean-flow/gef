@@ -213,6 +213,30 @@
             line-height: 1.8;
         }
 
+        /* Image section styles */
+        .image-section {
+            padding: 3rem 0;
+        }
+
+        .feature-image {
+            width: 100%;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(128, 90, 213, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .feature-image:hover {
+            box-shadow: 0 15px 50px rgba(128, 90, 213, 0.25);
+            transform: translateY(-3px);
+        }
+
+        .feature-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
         footer {
             background: linear-gradient(135deg, #2d3748, #4a5568);
             color: white;
@@ -281,6 +305,10 @@
         .card:nth-child(3) {
             animation-delay: 0.2s;
         }
+
+        .feature-image {
+            animation: fadeInUp 0.8s ease forwards;
+        }
     </style>
 </head>
 <body>
@@ -306,6 +334,14 @@
                 <h2 class="section-title">A Universe from First Principles</h2>
                 <div class="about-text">
                     <p>What if the strange rules of quantum mechanics and the elegant curves of spacetime were not fundamental, but were consequences of a deeper, simpler reality? GEF is an exploration into this possibility. We hypothesize a universe built not on abstract fields and extra dimensions, but on the tangible, geometric interactions of topological shapes in a 4D Euclidean space. Our goal is to derive the known laws of nature from this new foundation.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="image-section">
+            <div class="container">
+                <div class="feature-image">
+                    <img src="https://nsyzhnxvxdyvaqtjnvtk.supabase.co/storage/v1/object/public/share/fractal_coast_horizontal.webp" alt="Fractal coastline visualization" loading="lazy">
                 </div>
             </div>
         </section>
